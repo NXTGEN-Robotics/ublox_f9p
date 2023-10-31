@@ -34,6 +34,9 @@ namespace ublox_gps {
 
 using namespace ublox_msgs;
 
+// provide the definition of the static values declared in the header file
+constexpr int Gps::kSetBaudrateSleepMs;
+
 const boost::posix_time::time_duration Gps::default_timeout_ =
     boost::posix_time::milliseconds(
         static_cast<int>(Gps::kDefaultAckTimeout * 1000));

@@ -42,6 +42,14 @@ ros::Subscriber subRTCM;
 
 using namespace ublox_node;
 
+// provide the definition of the static values declared in the header file
+constexpr int ublox_node::UbloxNode::kResetWait;
+constexpr double ublox_node::UbloxNode::kPollDuration;
+constexpr float ublox_node::UbloxNode::kDiagnosticPeriod;
+constexpr double ublox_node::UbloxNode::kFixFreqTol;
+constexpr double ublox_node::UbloxNode::kFixFreqWindow;
+constexpr double ublox_node::UbloxNode::kTimeStampStatusMin;
+
 //
 // ublox_node namespace
 //
